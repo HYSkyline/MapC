@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta property="og:image" content="https://img.alicdn.com/bao/uploaded/i1/6000000007266/TB25IKbXUyfF1Jjy0FiXXaCmFXa_!!0-fleamarket.jpg">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="MapCollection">
+	<meta property="og:description" content="各地图商坐标拾取集成">
+	<meta name="keywords" content="地图,经纬度,坐标转换">
+    <meta name="description" content="各地图商坐标拾取集成">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="HYSkyline,HYSkyline@163.com">
+    <meta name="origanization" content="傲雪双犬">
+    <meta name="revisit-after" content="7days">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MapCollection</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7/css/bootstrap.css">
+	<script type="text/javascript" src="lib/js/coord.js"></script>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=ucVe8XDeVOb9vV1PH8VAAETaxRC3Brtl&services=&t=20170912191900"></script>
+	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.0&key=022aad37b3ec25df2e88764089c4d4d2"></script> 
+	<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+
+	<script type="text/javascript" src="lib/js/coordtrans.js"></script>
+	<script type="text/javascript" src="lib/js/gmap.js"></script>
+	<script type="text/javascript" src="lib/js/amap.js"></script>
+	<script type="text/javascript" src="lib/js/tmap.js"></script>
+	<script type="text/javascript" src="lib/js/bmap.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/css/MCStyle.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row" id="inputRow">
+		<div class="col-md-2" id="title">
+			<div id="titleImage"></div>
+		</div>
+		<div class="col-md-10">
+			<form class="form">
+				<div class="form-group">
+					<input type="text" class="form-control" name="target" id="inputBox" onkeypress="EnterPress()" placeholder="输入经纬度或地址" />
+				</div>
+				<input type='text' style='display:none'/>
+			</form>
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="mapSize">地图缩放等级(3-18,数字越大尺度越小)</label>
+					<input type="text" class="form-control" name="mapSize" id="mapSize" onkeypress="EnterSize()" value='14' />
+				</div>
+				<div class="form-group" id="radioSelect">
+					坐标系统:
+					<label class="radio-inline">
+						<input type="radio" name="coordType" value="wgs84" checked />WGS84
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="coordType" value="gcj02" />GCJ02
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="coordType" value="bd09" />BD09
+					</label>
+				</div>
+				<input type='text' style='display:none'/>
+			</form>
+		</div>
+	</div>
+	<div class="row" id="outputRow">
+		<hr />
+		<div class="col-md-3">
+			<div id="gmapContainer" class="mapContainer">Google map?ありません.</div>
+			<div id="gmapResults" class="well well-sm"></div>
+		</div>
+		<div class="col-md-3">
+			<div id="amapContainer" class="mapContainer">高德地图加载约需5s左右</div>
+			<div id="amapResults" class="well well-sm"></div>
+		</div>
+		<div class="col-md-3">
+			<div id="tmapContainer" class="mapContainer">腾讯地图加载约需3s左右</div>
+			<div id="tmapResults" class="well well-sm"></div>
+		</div>
+		<div class="col-md-3">
+			<div id="bmapContainer" class="mapContainer">百度地图加载约需2s左右</div>
+			<div id="bmapResults" class="well well-sm"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="lib/js/placeQuery.js"></script>
+<script type="text/javascript" src="lib/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script type="text/javascript" src="lib/js/mapInit.js"></script>
+</body>
+</html>
