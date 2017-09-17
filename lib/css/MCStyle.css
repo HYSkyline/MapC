@@ -47,14 +47,6 @@ img {
     /*IE*/
     filter:FlipH;
 }
-
-}
-hr {
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top: 15px;
-	margin-bottom: 5px;
-}
 .container-fluid {
 	height: 100%;
 }
@@ -97,9 +89,6 @@ form {
 	margin-bottom: 2px;
 	height: 100%;
 }
-#inputBoxGroup {
-	float: left;
-}
 #inputBox {
 	width: 100%;
 	height: 100%;
@@ -121,6 +110,12 @@ form {
 	#radioSelect {
 		float: right;
 	}
+	hr {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
 }
 @media screen and (max-device-width: 991px) {
 	.well-sm {
@@ -128,6 +123,12 @@ form {
 	}
 	#radioSelect {
 		float: right;
+	}
+	hr {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: 5px;
+		margin-bottom: 10px;
 	}
 }
 #radioSelect {
