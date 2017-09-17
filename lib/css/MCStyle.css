@@ -1,5 +1,6 @@
 * {
 	font-family: 'STXHei';
+	cursor: default;
 }
 html, body {
 	height: 100%;
@@ -72,6 +73,7 @@ img {
 }
 ul {
 	padding-left: 20px;
+	user-select: none;
 }
 li {
 	word-wrap: break-word; 
@@ -94,11 +96,13 @@ form {
 	height: 100%;
 	padding-top: 2px;
 	padding-bottom: 2px;
+	cursor: auto;
 }
 #mapSize {
 	height: 100%;
 	padding-top: 2px;
 	padding-bottom: 2px;
+	cursor: auto;
 }
 @media screen and (min-device-width: 992px) {
 	#inputRow {
@@ -133,4 +137,7 @@ form {
 }
 #radioSelect {
 	margin-top: 4px;
+}
+p {
+	user-select: none;
 }
