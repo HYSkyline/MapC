@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
 	<meta charset="utf-8">
-	<meta property="og:image" content="https://img.alicdn.com/bao/uploaded/i1/6000000007266/TB25IKbXUyfF1Jjy0FiXXaCmFXa_!!0-fleamarket.jpg">
+	<meta property="og:image" content="https://hyskyline.github.io/MapC/lib/img/customerl.JPG">
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="MapCollection">
 	<meta property="og:description" content="各地图商坐标拾取集成">
@@ -34,19 +34,19 @@
 <div class="container-fluid">
 	<div class="row" id="inputRow">
 		<div class="col-md-2" id="title">
-			<div id="titleImage"></div>
+			<div id="titleImage" class="titleImageL"></div>
 		</div>
 		<div class="col-md-10">
 			<form class="form">
 				<div class="form-group">
-					<input type="text" class="form-control" name="target" id="inputBox" onkeypress="EnterPress()" placeholder="输入经纬度(例如120,30)或地址(例如 南京市淳化医院). 回车查询." />
+					<input type="text" class="form-control" name="target" id="inputBox" onkeypress="EnterPress(event)" placeholder="输入经纬度(例如120,30)或地址(例如 南京市淳化医院). 回车查询." />
 				</div>
 				<input type='text' style='display:none'/>
 			</form>
 			<form class="form-inline">
 				<div class="form-group">
 					<label for="mapSize">地图缩放等级(3-18. 数字越大,尺度越小)</label>
-					<input type="text" class="form-control" name="mapSize" id="mapSize" onkeypress="EnterSize()" value='14' />
+					<input type="text" class="form-control" name="mapSize" id="mapSize" onkeypress="EnterSize(event)" value='14' pattern="[0-9]{1,2}" onkeyup="this.value=this.value.replace(/[A-z]/g,'');if(this.value>18){this.value='';}" />
 				</div>
 				<div class="form-group" id="radioSelect">
 					坐标系统: 

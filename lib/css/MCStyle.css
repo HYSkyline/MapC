@@ -26,12 +26,28 @@ img {
 	height: 100%;
 	margin-bottom: 4px;
 }
-#titleImage {
+.titleImageL {
 	background-image: url(../img/customerl.JPG);
 	background-repeat: repeat-x;
 	background-size: contain;
 	height: 100%;
 	min-height: 60px;
+}
+.titleImageR {
+	background-image: url(../img/customerl.JPG);
+	background-repeat: repeat-x;
+	background-size: contain;
+	height: 100%;
+	min-height: 60px;
+
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+
 }
 hr {
 	margin-left: 15px;
@@ -54,13 +70,6 @@ hr {
 .amap-drags {
 	border-radius: 10px;
 }
-.mapResults {
-	height: 49%;
-	overflow-y: auto;
-	overflow-x: hidden;
-	font-size: smaller;
-	margin-top: 5px;
-}
 .well-sm {
 	height: 45%;
 	overflow-y: auto;
@@ -71,6 +80,12 @@ hr {
 }
 ul {
 	padding-left: 20px;
+}
+li {
+	word-wrap: break-word; 
+}
+a.list-group-item {
+	word-wrap: break-word;
 }
 form {
 	height: 100%;
@@ -93,18 +108,18 @@ form {
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
-@media screen and (min-device-width: 761px) {
+@media screen and (min-device-width: 992px) {
 	#inputRow {
 		height: 7%;
 	}
 	#outputRow {
-		height: 93%;
+		height: 90%;
 	}
 	#radioSelect {
 		float: right;
 	}
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-device-width: 991px) {
 	.well-sm {
 		max-height: 400px;
 	}

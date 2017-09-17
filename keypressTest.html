@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+<input type="text" name="" />
+<script type="text/javascript">
+	function keyUp(e) {
+		var currKey=0,e=e||event;
+		currKey=e.keyCode||e.which||e.charCode;
+		var keyName = String.fromCharCode(currKey);
+		if (currKey == 13) {
+			alert('keyName');
+		}
+	}
+	document.onkeyup = keyUp;
+</script>
+</body>
+</html>
