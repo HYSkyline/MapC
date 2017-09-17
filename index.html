@@ -38,13 +38,13 @@
 		</div>
 		<div class="col-md-10">
 			<form class="form">
-				<div class="form-group">
+				<div class="form-group" id="inputBoxGroup">
 					<input type="text" class="form-control" name="target" id="inputBox" onkeypress="EnterPress(event)" placeholder="输入经纬度(例如120,30)或地址(例如 南京市淳化医院). 回车查询." />
 				</div>
 				<input type='text' style='display:none'/>
 			</form>
 			<form class="form-inline">
-				<div class="form-group">
+				<div class="form-group" id="mapSizeGroup">
 					<label for="mapSize">地图缩放等级(3-18. 数字越大,尺度越小)</label>
 					<input type="text" class="form-control" name="mapSize" id="mapSize" onkeypress="EnterSize(event)" value='14' pattern="[0-9]{1,2}" onkeyup="this.value=this.value.replace(/[A-z]/g,'');if(this.value>18){this.value='';}" />
 				</div>
