@@ -32,14 +32,14 @@ img {
 	background-repeat: repeat-x;
 	background-size: contain;
 	height: 100%;
-	min-height: 60px;
+	min-height: 40px;
 }
 .titleImageR {
 	background-image: url(../img/customerl.JPG);
 	background-repeat: repeat-x;
 	background-size: contain;
 	height: 100%;
-	min-height: 60px;
+	min-height: 40px;
 
     -moz-transform:scaleX(-1);
     -webkit-transform:scaleX(-1);
@@ -57,19 +57,31 @@ img {
 	width: 100%;
 	min-height: 200px;
 }
+#inputCol {
+	height: 100%;
+}
+#inputForm {
+	height: 50%;
+	padding: 1px;
+}
+#sizeForm {
+	height: 50%;
+	padding: 1px;
+}
 .col-md-3 {
-	height: 97%;
+	height: 98.5%;
 }
 .amap-drags {
 	border-radius: 10px;
 }
 .well-sm {
-	height: 45%;
+	height: 48.5%;
 	overflow-y: auto;
 	overflow-x: hidden;
 	font-size: smaller;
 	margin-top: 5px;
 	border-radius: 8px;
+	margin-bottom: 5px;
 }
 ul {
 	padding-left: 20px;
@@ -106,7 +118,7 @@ form {
 }
 @media screen and (min-device-width: 992px) {
 	#inputRow {
-		height: 7%;
+		height: 10%;
 	}
 	#outputRow {
 		height: 90%;
@@ -117,7 +129,7 @@ form {
 	hr {
 		margin-left: 15px;
 		margin-right: 15px;
-		margin-top: 15px;
+		margin-top: 5px;
 		margin-bottom: 5px;
 	}
 }
@@ -136,7 +148,7 @@ form {
 	}
 }
 #radioSelect {
-	margin-top: 4px;
+	padding-top: 0.5%;
 }
 p {
 	user-select: none;
