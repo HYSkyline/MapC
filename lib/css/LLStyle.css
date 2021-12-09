@@ -1,0 +1,123 @@
+* {
+	font-family: 'STXHei';
+	cursor: default;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+body {
+	padding: 5px;
+}
+img {
+	float: left;
+}
+.col-md-5 {
+	height: 100%;
+}
+.col-md-7 {
+	height: 100%;
+}
+
+
+.container-fluid {
+	height: 100%;
+}
+#firstRow {
+	min-height: 40px;
+	height: 5%;
+}
+#title {
+	bottom: 0;
+	user-select: none;
+	height: 100%;
+	margin-bottom: 4px;
+}
+#titleWord {
+	height: 100%;
+	font-size: large;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: justify;
+}
+
+#inputCol {
+	height: 100%;
+}
+#inputButton {
+	height: 100%;
+	width: 100%;
+	border: 1px solid #b3b3b3;
+	border-radius: 4px;
+}
+
+
+#secondRow {
+	height: 90%;
+}
+
+#map {
+	height: 100%;
+	border-radius: 10px;
+	width: 100%;
+}
+#tableContainer {
+	height: 100%;
+	width: 100%;
+}
+hr {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #d8d8d8;
+    border-radius: 5px;
+}
+table td, table th
+{
+	border: 1px solid #cad9ea;
+    color: #666;
+    height: 30px;
+    text-align: center;
+}
+table thead th
+{
+    background-color: #e6e6e6;
+}
+table tr:nth-child(odd)
+{
+    background: #fff;
+}
+table tr:nth-child(even)
+{
+    background: #f2f2f2;
+}
+
+
+@media screen and (min-device-width: 992px) {
+
+}
+@media screen and (max-device-width: 991px) {
+	#secondRow {
+		margin-top: 50px;
+		height: 20%;
+	}
+	#map {
+		height: 100%;
+	}
+	#tableContainer {
+		height: 300%;
+	}
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta property="og:image" content="https://hyskyline.github.io/MapC/lib/img/customerl.JPG">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="LnglatFetch">
+	<title>LnglatFetch</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/LLStyle.css">
+	<meta name="robots" content="nofollow">
+    <meta name="author" content="HYSkyline,HYSkyline@163.com">
+    <meta name="revisit-after" content="7days">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" href="lib/img/sq.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row" id="firstRow">
+		<div class="col-md-5" id="title">
+			<div id="titleWord" class="titleWord">
+				XXXX: 地址 > 经纬度批量查询工具
+			</div>
+		</div>
+		<div class="col-md-7" id="inputCol">
+			<input type="button" id="inputButton" value="上传本地EXCEL文件">
+		</div>
+	</div>
+	<hr />
+	<div class="row" id="secondRow">
+		<div class="col-md-5">
+			<div id="map"></div>
+		</div>
+		<div class="col-md-7">
+			<div id="tableContainer">
+				<table id="table">
+					<thead>
+						<tr>
+							<th style="width: 10%">序号</th>
+							<th style="width: 60%">地址</th>
+							<th style="width: 15%"></th>
+							<th style="width: 15%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>上海市人民广场</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>上海南京东路</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>金茂大厦</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>……</td>
+							<td>…………</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="lib/js/lnglat/coord.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=ucVe8XDeVOb9vV1PH8VAAETaxRC3Brtl&services=&t=20170912191900"></script>
+<script type="text/javascript">window._AMapSecurityConfig = {securityJsCode:'489b09c463931cb4d7bcd2c2f0862b38',}</script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=e2af2a1892a7dc9019bc280b9ea3bf77"></script> 
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=ZJWBZ-5ZUKP-TLFDF-LCXOR-GYZOJ-XZF2O"></script>
+
+<script type="text/javascript" src="lib/js/lnglat/coordtrans.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/amap.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/tmap.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/bmap.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/placeQuery.js"></script>
+<script type="text/javascript" src="lib/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/lnglatinit.js"></script>
+</html>
