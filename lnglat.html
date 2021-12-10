@@ -25,7 +25,8 @@
 			</div>
 		</div>
 		<div class="col-md-7" id="inputCol">
-			<input type="button" id="inputButton" value="上传本地EXCEL文件">
+			<input type="button" id="inputButton" value="上传本地EXCEL文件（表格中仅含1列地址，需加表头，详见下方样表）" onclick="javascript:selectFile()">
+			<input type="file" id="file" style="display: none;" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
 		</div>
 	</div>
 	<hr />
@@ -38,27 +39,23 @@
 				<table id="table">
 					<thead>
 						<tr>
-							<th style="width: 10%">序号</th>
-							<th style="width: 60%">地址</th>
+							<th style="width: 70%">地址</th>
 							<th style="width: 15%"></th>
 							<th style="width: 15%"></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>1</td>
 							<td>上海市人民广场</td>
 							<td></td>
 							<td></td>
 						</tr>
 						<tr>
-							<td>2</td>
 							<td>上海南京东路</td>
 							<td></td>
 							<td></td>
 						</tr>
 						<tr>
-							<td>3</td>
 							<td>金茂大厦</td>
 							<td></td>
 							<td></td>
@@ -67,10 +64,8 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td></td>
 						</tr>
 						<tr>
-							<td></td>
 							<td></td>
 							<td></td>
 							<td></td>
@@ -78,7 +73,6 @@
 						<tr>
 							<td>……</td>
 							<td>…………</td>
-							<td></td>
 							<td></td>
 						</tr>
 					</tbody>
@@ -102,5 +96,8 @@
 <script type="text/javascript" src="lib/js/lnglat/placeQuery.js"></script>
 <script type="text/javascript" src="lib/js/jquery-3.2.1.slim.min.js"></script>
 <script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/xlsx.core.min.js"></script>
 <script type="text/javascript" src="lib/js/lnglat/lnglatinit.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/xls.js"></script>
+<script type="text/javascript" src="lib/js/lnglat/query.js"></script>
 </html>
