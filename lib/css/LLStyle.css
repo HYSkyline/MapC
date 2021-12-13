@@ -81,6 +81,7 @@ img {
 	margin-bottom: 10px;
 	width: 100%;
 	border: 1px solid #b3b3b3;
+	border-radius: 6px;
 }
 .g-container {
     width: 100%;
