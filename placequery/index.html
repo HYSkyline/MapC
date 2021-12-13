@@ -20,8 +20,8 @@
 <div class="container-fluid">
 	<div class="row" id="firstRow">
 		<div class="col-md-5" id="title">
-			<div id="titleWord" class="titleWord">
-				给瑛瑛瑛: 地址 > 经纬度批量查询工具
+			<div id="titleWord" class="titleWord" onclick="window.location.href='../index.html';return false">
+				给瑛瑛瑛: 地址=>经纬度批量查询工具
 			</div>
 		</div>
 		<div class="col-md-7" id="inputCol">
@@ -37,6 +37,7 @@
 		<div class="col-md-7">
 			<div class="row" id="tableRow">
 				<div id="tableContainer"></div>
+				<div id="progressCheck" style="display: none;"></div>
 			</div>
 			<div class="row" id="startRow">
 				<div class="col-md-2">
@@ -47,7 +48,7 @@
 				</div>
 				<div class="col-md-8">
 					<div class="g-container">
-					    <div class="g-progress">20%</div>
+					    <div class="g-progress">0%</div>
 					</div>
 				</div>
 			</div>
