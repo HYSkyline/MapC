@@ -21,7 +21,7 @@
 	<div class="row" id="firstRow">
 		<div class="col-md-5" id="title">
 			<div id="titleWord" class="titleWord">
-				给瑛瑛瑛: 地址 > 经纬度批量查询工具
+				XXXX: 地址 > 经纬度批量查询工具
 			</div>
 		</div>
 		<div class="col-md-7" id="inputCol">
@@ -42,7 +42,10 @@
 				<div class="col-md-2">
 					<input type="button" id="startButton" value="开始查询" onclick="javascript:startQuery()">
 				</div>
-				<div class="col-md-10">
+				<div class="col-md-2">
+					<input type="button" id="saveButton" value="保存结果" onclick="javascript:exportExcel()">
+				</div>
+				<div class="col-md-8">
 					<div class="g-container">
 					    <div class="g-progress">20%</div>
 					</div>
@@ -69,4 +72,5 @@
 <script type="text/javascript" src="../lib/js/lnglat/xlsx.core.min.js"></script>
 <script type="text/javascript" src="../lib/js/lnglat/lnglatinit.js"></script>
 <script type="text/javascript" src="../lib/js/lnglat/xls.js"></script>
+<script type="text/javascript" src="../lib/js/lnglat/save.js"></script>
 </html>
